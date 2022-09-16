@@ -1,5 +1,7 @@
 package br.com.RuanFelipe.services;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.logging.Logger;
 
@@ -14,6 +16,19 @@ public class PersonService {
 	private final AtomicLong counter = new AtomicLong();
 	private Logger logger = Logger.getLogger(PersonService.class.getName());
 	
+	
+	public List<Person> findAll(){
+		logger.info("finding all people!");
+		List<Person> persons = new ArrayList<>();
+		
+		for(int i=1; i<8;i++) {
+			Person person = mockPerson(i);
+			persons.add(person);
+		}
+		
+		return persons;
+	}
+
 	public Person findById(String id) {
 		logger.info("finding one person!");
 		Person person = new Person();
@@ -23,5 +38,29 @@ public class PersonService {
 		person.setAddress("Benevides-Pa");
 		person.setGender("Male");
 		return person;
+	}
+	
+	public Person create(Person person) {
+		logger.info("Creating one person!");
+		return person;
+	}
+	public Person update(Person person) {
+		logger.info("Updating one person!");
+		return person;
+	}
+	public void delete(String id) {
+		logger.info("deleting one person!");
+		
+	}
+	
+	private Person mockPerson(int i) {
+		Person person = new Person();
+		person.setId(counter.incrementAndGet());
+		person.setFirstName("Person name"+i);
+		person.setLastName("Last name"+i);
+		person.setAddress("Benevides-Pa"+i);
+		person.setGender("Male");
+		return person;
+
 	}
 }
