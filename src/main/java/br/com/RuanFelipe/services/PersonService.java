@@ -7,8 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.RuanFelipe.data.vo.v1.PersonVO;
+import br.com.RuanFelipe.data.vo.v2.copy.PersonVOV2;
 import br.com.RuanFelipe.exceptions.ResourceNotFoundException;
 import br.com.RuanFelipe.mapper.DozerMapper;
+import br.com.RuanFelipe.mapper.custom.PersonMapper;
 import br.com.RuanFelipe.model.Person;
 import br.com.RuanFelipe.repositories.PersonRepository;
 
@@ -19,6 +21,9 @@ public class PersonService {
 	
 	@Autowired
 	PersonRepository repository;
+	
+	@Autowired
+	PersonMapper mapper;
 
 	public List<PersonVO> findAll() {
 
@@ -41,6 +46,14 @@ public class PersonService {
 		logger.info("Creating one person!");
 		var entity = DozerMapper.parseObject(person, Person.class);
 		var vo =  DozerMapper.parseObject(repository.save(entity), PersonVO.class);
+		return vo;
+	}
+	
+	public PersonVOV2 createV2(PersonVOV2 person) {
+		
+		logger.info("Creating one person with V2!");
+		var entity = mapper.convertVoTOEntity(person);
+		var vo =  mapper.convertEntityToVo(repository.save(entity));
 		return vo;
 	}
 	
