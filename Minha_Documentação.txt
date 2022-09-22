@@ -1,5 +1,13 @@
 Minhas anotaçoes sobre o spring
 
+2 Principais Conceitos
 *Injeção de dependência(DI): inversão de controle(deixar o fremework gerenciar algumas coisas que geral você criava, gerencia os objetos)
 *Programação Orientada a Aspectos(AOP): É um componente chave do Spring. As funções que abrangem vários pontos de um aplicativo são ditas de "interesse transversal" e essas preocupações transversais são conceitualmente separdas da lógica de negócios do aplicativo. Exemplo: log, transações declarativas, segurança, armazenamento em cache
-*O módulo AOP do Spring fremework fornece uma implementação de programação orientada a aspectos, permitindo que defina interctadores de método e pontos de corte para separar de forma simples o código que implementa a funcionalidade que deve ser separada
+-O módulo AOP do Spring fremework fornece uma implementação de programação orientada a aspectos, permitindo que defina interctadores de método e pontos de corte para separar de forma simples o código que implementa a funcionalidade que deve ser separada
+
+*Arquitetura
+-Spring é modular, permitindo que se escolha quais módulos são aplicáveos, sem ter que trazer o restante
+-O Sprinf fremework tem cerca de 20 módulos
+	1.Core Container: consiste módulos Core, Brans, Context e Expression Language: 
+		1.1-O módulo Core fornece as partes fundamentais do fremework, incluindo os recursos IoC e Dependecy Injection; 
+		1.2-O módulo Bean fornece o BenaFactory, que é uma implementação sofisticada do factory pattern 
