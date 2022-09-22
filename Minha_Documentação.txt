@@ -1,0 +1,5 @@
+Minhas anotaçoes sobre o spring
+
+*Injeção de dependência(DI): inversão de controle(deixar o fremework gerenciar algumas coisas que geral você criava, gerencia os objetos)
+*Programação Orientada a Aspectos(AOP): É um componente chave do Spring. As funções que abrangem vários pontos de um aplicativo são ditas de "interesse transversal" e essas preocupações transversais são conceitualmente separdas da lógica de negócios do aplicativo. Exemplo: log, transações declarativas, segurança, armazenamento em cache
+*O módulo AOP do Spring fremework fornece uma implementação de programação orientada a aspectos, permitindo que defina interctadores de método e pontos de corte para separar de forma simples o código que implementa a funcionalidade que deve ser separada
