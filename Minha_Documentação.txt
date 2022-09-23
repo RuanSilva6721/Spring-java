@@ -11,3 +11,23 @@ Minhas anotaçoes sobre o spring
 	1.Core Container: consiste módulos Core, Brans, Context e Expression Language: 
 		1.1-O módulo Core fornece as partes fundamentais do fremework, incluindo os recursos IoC e Dependecy Injection; 
 		1.2-O módulo Bean fornece o BenaFactory, que é uma implementação sofisticada do factory pattern 
+		1.3-O módulo Context baseia-se na base sólida fornecida pelos módulos Core e Beans e é um meio de acessar qualquer objeto definido e configurado. A interface ApplicationContext é o ponto focal do módulo de Contexto
+		1.4- O módulo SpEL(Spring Expression Language) fornece uma poderosa linguagem de expressão para consultar  manipular objetos em tempo de execução
+	2.Data Acess/Integration: É composta prlos módulos JDBC ORM, OXM, JMS e Transaction
+		2.1-JDBC(Java Data Base Connection):O módulo fornece uma camada de abstração de JBDC que elimina a necessidade de codificação repetitiva ao JDBC
+		2.2-ORM: O módulo fornece camadas de integração para APIs de mapeamento objeto-relacional populares, incluindo JPA, JDO, Hibernate e IBatis
+		2.3-OXM:O módulo fornece uma camada de abstração quesuporta implementações de mapeamento de objeto/XML para JAXB, Castor, XMLBeans, JiBX e Xstream
+		2.4-JMS:O módulo do Java Messaging Service contém recursos para produzir e consumir mensagens
+		2.5-Transaction:O módulo suporta o gerenciamento de transações programáticas e declarativas para classes que implementam interfaces especiais e para todos os seus POJOs
+	3-Web: A camada consiste nos módulos Web, Web-MVC, Web-Socket e Web-Portlet
+		3.1.-Web:O módulo fornece recursos básicos de integração orientados á web, como funcionalidade de upload de arquivosde várias partes e a inicialização de contêiner IoC usando servlet listeners e um contexto de aplicativo orientado para a web
+		3.2-Web-MVC:contém a implementação do Model-View-Controller(MVC) do Spring para aplicativos Web
+		3.3-Web-Socket: fornece suporte para comunicação bidrecional baseada em WebSocket entre o cliente e o servidor em aplicativos da web
+		3.4-Web-Portlet: a implementação MVC a ser usada em um ambiente de portlety e espelha a funcionalidade do módulo Web-Servlet  
+		
+	4-Módulos Diversos: AOP, Aspects, Intrumentation, Web e Test
+		4.1-AOP: fornece uma implemntação de programação orientada a aspectos permitindo que você defina interceptores de métodos e pontos de corte para separar de forma simples o código que implementa a funcionalidade que deve ser separada
+		4.2-Aspects: fornece integração com AspectJ, que é novamente uma estrutura AOP poderosa e madura  
+		4.3-Instrumentation: fornece suporte de instrumentaçãode classe e implementações de class loaders a serem usadas em determinados servidores de aplicativos
+		4.4-Messaging: fornece suporte para STOMP como subprotocolo WebSocket para uso em aplicativos
+		4.5-Test: suporta o teste de componentes Spring com Fremeworks JUnit ou TestNG
