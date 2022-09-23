@@ -31,3 +31,33 @@ Minhas anotaçoes sobre o spring
 		4.3-Instrumentation: fornece suporte de instrumentaçãode classe e implementações de class loaders a serem usadas em determinados servidores de aplicativos
 		4.4-Messaging: fornece suporte para STOMP como subprotocolo WebSocket para uso em aplicativos
 		4.5-Test: suporta o teste de componentes Spring com Fremeworks JUnit ou TestNG
+
+
+spring boot: fremework javapara desenvolver app, microservece, usa o tomcat
+spring clound: integrar os microservices
+
+		
+*Spring Cloud:
+É uma coleção de componentes prontos para uso que são úteis na construção de aplicativos distribuidos em uma empresa
+
+-Gerenciamente de configuração
+-Server discovery
+-Balanceamneto de carga
+-circuit breakers
+-Mrnsagens distribuidas 
+-roteamento inteligente
+-micro-proxy
+-control bus(controle de barramento)
+-global locks(operações que não pode ser relaizada por 2 operando ao mesmo tempo)
+-sessões distribuidas
+-distribuição de mensagens
+-Api Gateway: É O 'portão' vai distribuir as requisição para os microserviços 
+-Spring Cloud Config: oferece o armazenamento de arquivos de configurações em repositório
+-Service registry: para indentificar os microservices, Api Geteway pergunta para ele em qual microservice deve colocar a requisição
+-Distributed Tracing: rastreamento da comunicação do microservices
+-Beneficios: Os DEVs se concentram na lógica de negócios, tempo de desenvolvimento rápido, fácil de usar, projeto ativo
+-Spring Cloud Eureka(Service registry) : descoberta dos microservices 
+
+
+
+	
