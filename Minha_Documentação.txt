@@ -1,6 +1,16 @@
 Minhas anotaçoes sobre o spring
 
-2 Principais Conceitos
+#IMPORTANTE: Esses tópicos são coisas diferentes, framework java para desenvolver app, microservece, usa o tomcat
+-spring boot: é um projeto que é construído sobre o Spring Framework
+-spring clound: integrar os microservices
+-spring fremework: conjunto dos 'Springs'
+
+
+
+
+
+
+1 Principais Conceitos
 *Injeção de dependência(DI): inversão de controle(deixar o fremework gerenciar algumas coisas que geral você criava, gerencia os objetos)
 *Programação Orientada a Aspectos(AOP): É um componente chave do Spring. As funções que abrangem vários pontos de um aplicativo são ditas de "interesse transversal" e essas preocupações transversais são conceitualmente separdas da lógica de negócios do aplicativo. Exemplo: log, transações declarativas, segurança, armazenamento em cache
 -O módulo AOP do Spring fremework fornece uma implementação de programação orientada a aspectos, permitindo que defina interctadores de método e pontos de corte para separar de forma simples o código que implementa a funcionalidade que deve ser separada
@@ -32,10 +42,6 @@ Minhas anotaçoes sobre o spring
 		4.4-Messaging: fornece suporte para STOMP como subprotocolo WebSocket para uso em aplicativos
 		4.5-Test: suporta o teste de componentes Spring com Fremeworks JUnit ou TestNG
 
-
-spring boot: fremework javapara desenvolver app, microservece, usa o tomcat
-spring clound: integrar os microservices
-
 		
 *Spring Cloud:
 É uma coleção de componentes prontos para uso que são úteis na construção de aplicativos distribuidos em uma empresa
@@ -58,6 +64,38 @@ spring clound: integrar os microservices
 -Beneficios: Os DEVs se concentram na lógica de negócios, tempo de desenvolvimento rápido, fácil de usar, projeto ativo
 -Spring Cloud Eureka(Service registry) : descoberta dos microservices 
 
+*Spring Boot 
+-roda sozinho(stand-alone)
+-bibliotecas pré-configuradas
+-injeção de dependência
+-integração com outros frameworks java: JPA/Hibernate
+-Projetos Relacionados:
+	1-Spring Data: Simplifica o acesso aos dados dos bancos de dados relacionais e NoSQL
+	2-Spring Batch: fornece processamento em lote poderoso
+	3-Spring Security: é um fremework de segurança que fornece robusta para aplicações
+	4-Spring Social: Suporta integração com redes sociais como Linkedin
+	5-Spring Integration: é uma implementação de Enterprise Integration Patterns
+Vantagens: 
+	1-gera '.jar'
+	2-teste de aplicativos da web facilmente com a ajuda de diferentes servidores HTTP incorporados, como TomCat, Jetty, etc
+	3-Não é necessário implatar arquivos WAR
+	4-Fornece POMs 'iniciais' opinativos para simplificar nossa configuração Maven
+	5-fornece recursos prontos para produção, métricas, verificações de integridade e configuração externa
+	5-Não há necessidade de configurações XML
+	6-Oferece uma ferramenta de CLI para desenvolvedores e testar o aplicativo Spring Boot
+	7-Minimiza a gravação de vários códigos repetitivos(o código que deve ser incluido em muito lugares com pouca ou nenhuma alteração), configuração XML e anotações
+	8-Aumenta a produtividade e reduz o tempo de desenvolvimento
 
+Objetivos:
+	1-Principal objetico Spring Boot é reduzir tempo de desenvolvimento, teste de unidade e teste de integração
+	2-Fornece abordagem de desenvolvimento opinativo
+	3-evitar definir mais configuração de anatação
+	4-evitar escrever muitas instruções de importação
+	5-Evitar a configuração XML	
+Arquitetura
 
+*Map Struck
+	Gerador de código para mapeamento dos bin's
 	
+	
+
